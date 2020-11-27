@@ -11,7 +11,7 @@ const Login = () => {
     <div className="login">
       <div className="login__telegram">
         <img src="/telegramLogo.png" alt="Telegram Logo" />
-        <h1>Telegram</h1>
+        <h1>Let's Chat</h1>
       </div>
       <Button onClick={signIn}>Sign In</Button>
     </div>
