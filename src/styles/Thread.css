@@ -8,7 +8,7 @@
 .thread__header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+  border-bottom: 1px solid rgba(190, 190, 190, 0.1);
   align-items: center;
   align-content: center;
   height: 50px;
@@ -22,16 +22,67 @@
   color: white;
   padding: 10px;
 }
-
+.thread__header__contents__info {
+  padding-left: 20px;
+}
 .thread__header__contents__info > h5 {
   font-weight: 450;
   color: gray;
 }
 
-.thread__header__details {
+.thread__header__details,
+.thread__header__files {
+  color: white;
+  transition: 0.3s !important;
+}
+.thread__header__details:hover,
+.thread__header__files:hover {
+  color: rgb(2, 87, 199);
+}
+.thread__messages {
+  flex: 1;
+  overflow: scroll;
+}
+.thread__messages::-webkit-scrollbar {
+  width: 5px;
+}
+.thread__messages::-webkit-scrollbar-corner {
+  display: none;
+}
+.thread__messages::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.thread__messages::-webkit-scrollbar-thumb {
+  background-color: rgba(190, 190, 190, 0.2);
+  border-radius: 5px;
+}
+.thread__messages::-webkit-scrollbar-thumb:hover {
+  background-color: darkgray;
+}
+
+.thread__input {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-top: 1px solid rgba(190, 190, 190, 0.1);
+}
+.thread__message {
+  height: 25px;
+  background-color: #2d3471;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+.thread__input > button {
   color: white;
   transition: 0.3s;
 }
-.thread__header__details:hover {
+.thread__input > button:hover {
   color: rgb(2, 87, 199);
 }

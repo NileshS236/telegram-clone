@@ -58,9 +58,14 @@
 
 #sidebar__button {
   color: white !important;
+  transition: 0.3s;
+}
+#sidebar__button:hover {
+  color: rgb(2, 87, 199) !important;
 }
 
 .sidebar__bottom {
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
   padding: 10px 20px;

@@ -11,6 +11,12 @@
   background-color: rgb(2, 87, 199);
 }
 
+.sidebarThread__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidebarThread__details {
   margin-left: 15px;
   position: relative;
@@ -19,6 +25,5 @@
 
 .sidebarThread__timestamp {
   position: absolute;
-  top: 5px;
   right: 0;
 }
