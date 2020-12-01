@@ -10,6 +10,7 @@ const Message = ({
   data: { timestamp, displayName, email, message, photo, uid },
 }) => {
   const user = useSelector(selectUser);
+  console.log(timestamp);
 
   return (
     <div className={`message ${user.email === email && "message__sender"}`}>
